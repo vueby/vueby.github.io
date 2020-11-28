@@ -174,7 +174,7 @@ export default {
     }
 
     var siteUrl = this.$site.themeConfig.domain;      
-    if (typeof this.$ssrContext !== "undefined" || this.$page.path.length <= 1) {    
+    if (typeof this.$ssrContext !== "undefined") {    
       var pageTitle = this.$page.title ? this.$page.title.toString().replace(/["|'|\\]/g, '') : null;
       var imageUrl = this.$page.frontmatter.image ? this.$page.frontmatter.image : 'https://cdn.jsdelivr.net/gh/dbdgs/images@main/dabai.jpg';
       var siteName = this.$site.title || null;
