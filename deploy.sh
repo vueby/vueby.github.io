@@ -18,7 +18,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:vueby/vueby.github.io
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://dbdgs:${GITHUB_TOKEN}@github.com/vueby/vueby.github.io
+  githubUrl=https://vueby:${GITHUB_TOKEN}@github.com/vueby/vueby.github.io
 fi
 git init
 git add -A
