@@ -181,7 +181,7 @@ export default {
       var publishedTime = dayjs(this.$page.frontmatter.date).toISOString() || dayjs(this.$page.lastUpdated).toISOString();
       var modifiedTime = dayjs(this.$page.lastUpdated).toISOString();
       var pageUrl = siteUrl + this.$page.path;
-      var pageType = pageUrl == siteUrl ? 'website' : 'article' ;
+      var pageType = this.$page.path.length <= 1 ? 'website' : 'article' ;
       // var author = this.$site.themeConfig.personalInfo ? this.$site.themeConfig.personalInfo : null;    
 
       const data =
