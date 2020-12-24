@@ -1,0 +1,1 @@
+Assets including icons etc.
